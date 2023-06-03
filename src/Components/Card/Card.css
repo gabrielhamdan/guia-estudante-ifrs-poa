@@ -1,0 +1,22 @@
+.card {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
+  
+  .card div {
+    background:  linear-gradient(180deg, #369831 0%, #3f793c);
+    border-radius: 30px;
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+  }
+  
+  .titulo-card {
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

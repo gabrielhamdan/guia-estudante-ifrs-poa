@@ -1,0 +1,29 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  background: white;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  color: #369831;
+  text-align: center;
+}
+
+i {
+  color: #369831;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.refresh-btn {
+  font-size: 28px;
+  margin-left: 15px;
+  cursor: pointer;
+}
