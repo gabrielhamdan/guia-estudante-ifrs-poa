@@ -5,6 +5,7 @@ import Card from "../Components/Card/Card";
 export default function Home() {
     return (
         <>
+        {/* <Header/> */}
         <div>
             <h1>GUIA DO ESTUDANTE</h1>
         </div>
