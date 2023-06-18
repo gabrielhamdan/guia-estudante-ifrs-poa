@@ -1,26 +1,25 @@
-.exemplos {
+.titulo-subtitulo-container {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
-    text-transform: uppercase;
+    flex-direction: column;
 }
 
-.exemplos h2 {
-    margin: 30px;
+.titulo-guia h1 {
+  color: #3a9d4b;
 }
 
-.exemplos a {
-    transition: ease-in-out .2s;
+.titulo-guia {
+    max-width: fit-content;
+    border-bottom: 2px solid #3a9d4b;
 }
 
-.exemplos a:hover {
-    color: #369831;
-    filter: drop-shadow(0 0 0.75rem #369831);
+.subtitulo-guia {
+    color: #8dc445;
 }
 
-.rodape {
-    font-size: small;
-    bottom: 15px;
-    position: absolute;
+.menu-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
 }

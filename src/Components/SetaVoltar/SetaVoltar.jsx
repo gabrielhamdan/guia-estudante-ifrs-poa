@@ -5,7 +5,7 @@ import { faArrowLeft } from "@fortawesome/free-solid-svg-icons"
 import './SetaVoltar.css'
 import { Link } from 'react-router-dom'
 
-export default function SetaVoltar() {
+export default function SetaVoltar(props) {
     const animacao = {
         rest: { rotate: 0 },
         hover: { left: 25, transition: { duration: 0.4 } }
