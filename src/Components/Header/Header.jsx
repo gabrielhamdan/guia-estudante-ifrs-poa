@@ -1,27 +1,10 @@
 import React from "react";
 import "./Header.css"
-import { motion } from "framer-motion";
 import Menu from "../MenuHamburguer/Menu";
 import MenuToggle from "../MenuHamburguer/MenuToggle";
 import { useState } from "react";
 // import IMAGES from "src/Images/Images.jsx"
 
-
-const menuVariants = {
-    open: {
-        transform: "translateY(3%)",
-    },
-    closed: {
-        transform: "translateY(103%)",
-    },
-};
-  
-const menuTransition = {
-    type: "spring",
-    duration: 1,
-    stiffness: 33,
-    delay: 0.1,
-};
 
 export default function Header(){
 
@@ -51,12 +34,7 @@ export default function Header(){
                 </div>
             </header>
             {isOpen &&
-                <Menu className="menu-componente"
-                initial={false}
-                animate={isOpen ? "open" : "closed"}
-                variants={menuVariants}
-                transition={menuTransition}
-                />
+                <Menu className="menu-componente"/>
             }
         </div>
     )
