@@ -50,12 +50,14 @@ export default function Header(){
                     <MenuToggle toggle={toggleMenu} isOpen={isOpen}/>
                 </div>
             </header>
-            <Menu 
+            {isOpen &&
+                <Menu className="menu-componente"
                 initial={false}
                 animate={isOpen ? "open" : "closed"}
                 variants={menuVariants}
                 transition={menuTransition}
-            />
+                />
+            }
         </div>
     )
 }
