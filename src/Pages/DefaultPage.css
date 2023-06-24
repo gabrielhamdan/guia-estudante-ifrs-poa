@@ -9,6 +9,10 @@ main {
     z-index: 1;
 }
 
+.main-default {
+    max-width: 60%;
+}
+
 .pagina-titulo-subtitulo-container {
     margin-top: 130px;
     z-index: 1;
