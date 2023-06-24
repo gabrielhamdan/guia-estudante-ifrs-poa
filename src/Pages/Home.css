@@ -1,8 +1,5 @@
-main {
-    z-index: 1;
-}
-
 .titulo-subtitulo-container {
+    margin-top: 130px;
     z-index: -1;
     display: flex;
     align-items: center;
@@ -33,4 +30,10 @@ main {
     max-width: 70%;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width: 800px) {
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
 }

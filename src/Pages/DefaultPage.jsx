@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import './DefaultPage.css'
 import SetaVoltar from "../Components/SetaVoltar/SetaVoltar"
 import Header from "../Components/Header/Header"
@@ -9,6 +9,7 @@ export default function DefaultPage() {
 
     return (
         <>
+        <Header />
         <main>
             <div className="pagina-titulo-subtitulo-container">
                 <h1 className="titulo-pagina">{name.replaceAll("-", " ")}</h1>
