@@ -20,7 +20,7 @@ export default function DefaultPage() {
         }
     
         fetchData()
-    }, [])
+    }, [name])
 
     return (
         <>

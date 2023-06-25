@@ -15,7 +15,7 @@ export default function Conteudo(props) {
 
             props.conteudo.subsecoes.map((subsecao, index) => {
                 return <>
-                    <div key={index} className="container-subsecao">
+                    <div key={subsecao.titulo + index} className="container-subsecao">
                         <h2 className="titulo-subsecao">{subsecao.titulo}</h2>
                         <p className="conteudo-subsecao">{subsecao.texto_sub}</p>
                     </div>
@@ -26,7 +26,7 @@ export default function Conteudo(props) {
         {
             props.conteudo.caixa_texto.length > 0 &&
 
-            <p key="caixa-texto" className="caixa-texto">{props.conteudo.caixa_texto}</p>
+            <p className="caixa-texto">{props.conteudo.caixa_texto}</p>
         }
         </>
     )

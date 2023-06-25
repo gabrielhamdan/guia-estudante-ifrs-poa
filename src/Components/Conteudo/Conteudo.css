@@ -1,4 +1,5 @@
 .container-subsecao {
+    z-index: 1;
     width: 100%;
 }
 

@@ -14,6 +14,11 @@ export default function Header(){
     const toggleMenu = () => {
         setOpen(!isOpen)
     };
+
+    const fechaMenu = () => {
+        if(isOpen)
+            setOpen(false)
+    }
      
     return(
         <div>
@@ -35,7 +40,7 @@ export default function Header(){
                 </div>
             </header>
             {isOpen &&
-                <Menu className="menu-componente"/>
+                <Menu className="menu-componente" click={fechaMenu}/>
             }
         </div>
     )
