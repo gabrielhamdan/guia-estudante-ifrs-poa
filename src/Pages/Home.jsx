@@ -1,10 +1,12 @@
 import React from "react";
 import './Home.css'
 import Card from "../Components/Card/Card";
+import Header from "../Components/Header/Header";
 
 export default function Home() {
     return (
         <>
+        <Header />
         <main>
             <div className="titulo-subtitulo-container">
                 <div className="titulo-guia">

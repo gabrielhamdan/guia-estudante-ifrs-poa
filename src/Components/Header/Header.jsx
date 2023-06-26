@@ -3,25 +3,31 @@ import "./Header.css"
 import Menu from "../MenuHamburguer/Menu";
 import MenuToggle from "../MenuHamburguer/MenuToggle";
 import { useState } from "react";
-// import IMAGES from "src/Images/Images.jsx"
-
+import logoIF from "../../Images/ifrs_logo_white.png"
+import { Link } from "react-router-dom";
 
 export default function Header(){
+    const logo = logoIF;
 
     const [isOpen, setOpen] = useState(false);
 
     const toggleMenu = () => {
         setOpen(!isOpen)
     };
+
+    const fechaMenu = () => {
+        if(isOpen)
+            setOpen(false)
+    }
      
     return(
         <div>
             <header>
                 <div className="header_info">
                     <div>
-                        <img src="src/Images/ifrs_logo_white.png" alt="logo ifrs" />
-
-                        {/* <img src={IMAGES.image1} alt='logo ifrs'/> */}
+                        <Link to="/">
+                            <img src={logo} />
+                        </Link>
                     </div>
                     <div className="ifrs_info">
                         <h3>INSTITUTO FEDERAL</h3>
@@ -34,7 +40,7 @@ export default function Header(){
                 </div>
             </header>
             {isOpen &&
-                <Menu className="menu-componente"/>
+                <Menu className="menu-componente" click={fechaMenu}/>
             }
         </div>
     )

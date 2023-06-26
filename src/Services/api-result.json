@@ -1,0 +1,25 @@
+{
+    "meu-cadastro":
+    {
+      "titulo": "Meu Cadastro",
+      "texto_principal": "Todo aluno do Campus POA possui um cadastro no sistema da instituição que dá acesso a diversas áreas e serviços do Campus. Você pode acessá-los utilizando seu usuário e senha.",
+      "subsecoes": [
+        {
+          "titulo": "Usuário",
+          "texto_sub": "Número da sua matrícula (apenas números), que pode ser encontrado no comprovante de matricula e no crachá de identificação."
+        },
+        {
+          "titulo": "Senha",
+          "texto_sub": "Número do seu RG."
+        } 
+      ],
+      "caixa_texto": ""
+    },
+    "primeiro-acesso":
+    {
+      "titulo": "Primeiro Acesso",
+      "texto_principal": "A sua senha de acesso é o número do seu RG. Mas no primeiro acesso a um dos nossos computadores do Campus POA será solicitado que você escolha uma nova senha.\nVocê deve criar uma senha com no mínimo 8 caracteres, com pelo menos 3 letras minúsculas e 3 números. Essa será sua senha de agora em diante.",
+      "subsecoes": [],
+      "caixa_texto": "Esqueceu a senha? Problemas em acessar os sistemas?\nEntre em contato com a DTI: 3930-6020 / dti@poa.ifrs.edu.br"
+    }
+}

@@ -10,11 +10,11 @@ const Path = (props) => (
       strokeWidth="3"
       {...props}
     />
-  );
+);
   
-  const transition = { duration: 0.3 };
-  
-  export default function MenuToggle({ toggle, isOpen }) {
+const transition = { duration: 0.3 };
+
+export default function MenuToggle({ toggle, isOpen }) {
 
     return (
       <div onClick={toggle}>
