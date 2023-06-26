@@ -4,7 +4,7 @@ import './DefaultPage.css'
 import SetaVoltar from "../Components/SetaVoltar/SetaVoltar"
 import Header from "../Components/Header/Header"
 
-export default function DefaultPage() {
+export default function DefaultPage(props) {
     const { name } = useParams();
 
     return (
